@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="carousel.js" defer></script>
+    <script src="https://kit.fontawesome.com/fc6b22f201.js" crossorigin="anonymous"></script>
+    <title>Carousel</title>
+</head>
+
+<body>
+    <!--history carousel-->
+    <section>
+        <div class="flexbox-slideshow">
+            <div class="slideshow-intro">
+                <img class="myImage firstImage" src="images/Unknown.png" alt="image-1">
+                <img class="myImage" src="images/360_F_388638369_wSBADhKfhiTx6Q5Pz1xfdpy6zotku1Sg.jpg" alt="image-2">
+                <img class="myImage" src="images/360_F_533712030_s5esxfYIHjJ205WJerJMh4123THr6K2A.jpg" alt="image-3">
+                <img class="myImage" src="images/istockphoto-1149316411-612x612.jpg" alt="image-4">
+                <img class="myImage" src="images/shutterstock_479042983.jpg" alt="image-5">
+                <img class="myImage" src="images/360_F_448354204_33yPB12jtqzD31robpa85NoPctJ2thRd.jpg" alt="image-6">
+                <div class="text-slideshow">
+
+                    <h1>History</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, odit suscipit? Alias
+                        consequuntur, reprehenderit unde nobis ducimus animi voluptas? Labore saepe dolores doloribus
+                        sed, eius ea, commodi fuga fugit omnis asperiores voluptatem nihil perspiciatis numquam possimus
+                        dicta, adipisci voluptatibus. Unde ullam perferendis esse earum, aspernatur vitae expedita quis
+                        in tenetur.</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="buttons">
+            <button onclick="nextSlide(-1)"><i class="fa-solid fa-angles-left"></i></button>
+            <button onclick="nextSlide(1)"><i class="fa-solid fa-angles-right"></i></button>
+            <button onclick="stopSlide()"><i class="fa-solid fa-stop"></i></button>
+            <button onclick="playSlide()"><i class="fa-solid fa-play"></i></button>
+        </div>
+
+
+        <div id="indicator">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+        <div class="set-time">
+            <h3>Set time by User</h3>
+            <input type="number" name="" id="userTime" value="3000">
+        </div>
+
+
+    </section>
+</body>
+
+</html>
